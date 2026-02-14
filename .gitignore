@@ -21,8 +21,7 @@ Thumbs.db
 .vscode/
 .cursor/
 
-# Scraped docs (large, regenerable)
-docs/
+# docs/ is a git submodule pointing to didit-protocol/technical-docs
 
 # ClawHub local state
 .clawhub/

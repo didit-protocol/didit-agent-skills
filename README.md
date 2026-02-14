@@ -138,6 +138,7 @@ skills/                         ← 11 skills, each a standalone folder
 ├── didit-aml-screening/SKILL.md
 ├── didit-proof-of-address/SKILL.md
 └── didit-database-validation/SKILL.md
+docs/                          ← Official Didit technical docs (git submodule)
 tests/test_all_skills.py       ← 23-endpoint test suite
 ```
 
