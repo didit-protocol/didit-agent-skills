@@ -139,7 +139,6 @@ skills/                         ← 11 skills, each a standalone folder
 ├── didit-proof-of-address/SKILL.md
 └── didit-database-validation/SKILL.md
 tests/test_all_skills.py       ← 23-endpoint test suite
-scripts/scrape_docs.py         ← docs.didit.me scraper (regenerates /docs)
 ```
 
 Each `SKILL.md` contains ClawHub-compatible frontmatter:

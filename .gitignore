@@ -26,3 +26,6 @@ docs/
 
 # ClawHub local state
 .clawhub/
+
+# Internal tooling
+scripts/
