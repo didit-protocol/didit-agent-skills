@@ -21,7 +21,8 @@ Thumbs.db
 .vscode/
 .cursor/
 
-# docs/ is a git submodule pointing to didit-protocol/technical-docs
+# Docs (moved to mintlify-docs repo)
+docs/
 
 # ClawHub local state
 .clawhub/
