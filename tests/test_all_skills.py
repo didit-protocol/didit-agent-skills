@@ -2,7 +2,7 @@
 """
 Comprehensive test suite for all 12 Didit agent skills (1 hub + 1 KYC + 10 standalone).
 Tests API connectivity, authentication, and basic request/response for each endpoint.
-Covers 50+ endpoints across identity verification, KYC flows, account setup, sessions,
+Covers 51 endpoints across identity verification, KYC flows, account setup, sessions,
 workflows, questionnaires, users, billing, webhook configuration, and 10 standalone
 verification APIs.
 
@@ -931,10 +931,6 @@ def test_webhook_config():
             headers=HEADERS_KEY,
             timeout=30,
         )
-        if r.status_code == 404:
-            log("webhook-config", "GET /v3/webhook/ (get config)", r.status_code,
-                "endpoint not yet deployed (404 expected for new API)", True)
-            return
         assert r.status_code == 200, f"Expected 200, got {r.status_code}"
         data = r.json()
         original_url = data.get("webhook_url")

@@ -139,7 +139,7 @@ export DIDIT_WEBHOOK_SECRET="your_secret"      # from Console → API & Webhooks
 | Proof of Address | `didit-proof-of-address` | `POST /v3/poa/` |
 | Database Validation | `didit-database-validation` | `POST /v3/database-validation/` |
 
-**50+ endpoints total** (including webhook configuration), all tested.
+**51 endpoints total**, all tested.
 
 ---
 
@@ -152,7 +152,7 @@ python3 tests/test_all_skills.py
 ```
 
 ```
-RESULTS: 48/48 passed, 0 failed
+RESULTS: 51/51 passed, 0 failed
 ```
 
 ---
@@ -173,7 +173,7 @@ skills/                              ← 12 skills (1 hub + 1 KYC recipe + 10 st
 ├── didit-aml-screening/              SKILL.md + scripts/screen_aml.py
 ├── didit-proof-of-address/           SKILL.md + scripts/verify_address.py
 └── didit-database-validation/        SKILL.md + scripts/validate_database.py
-tests/test_all_skills.py            ← 48+ endpoint test suite (grows to 51 when webhook API deploys)
+tests/test_all_skills.py            ← 51 endpoint test suite
 ```
 
 Each `SKILL.md` follows the **three-tier information architecture**:
